@@ -1,13 +1,3 @@
-var crsr=document.querySelector("#cursor")  //used to select any element text to js
-var blur=document.querySelector("#cursor-blur")
-document.addEventListener("mousemove",function(dets){
-    crsr.style.left=dets.x+"px"; // i.e position of crsr from left of page= position of actual mouse/cursor acc to x axis ,in px
-    crsr.style.top= dets.y+"px"; // i.e position of crsr from right of page= position of actual mouse/cursor acc to y axis, in px
-    blur.style.left=dets.x- 190 +"px"; //-190 i.e sifting it to 190 px more left which is half of cursor-blur width
-    blur.style.top= dets.y-190+"px";    //-190 i.e sifting it to 190 px more down which is half of cursor-blur width so our cursor is around middle of cursor blur
-});
-
-
 gsap.to("#nav",{
     backgroundColor:"#000",
     //note:- when using function same as in css here we use camelcase here i.e capital c or t  instead of -c or -t, in case of 'backgreound-colour' it become-> 'backgroundColour'
